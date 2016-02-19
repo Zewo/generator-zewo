@@ -32,6 +32,6 @@ module.exports = yeoman.generators.Base.extend({
     
     this.template('Dockerfile', context.applicationName + '/Dockerfile', context)
     this.copy('Package.swift', context.applicationName + '/Package.swift')
-    this.copy('main.swift', context.applicationName + '/Source/main.swift')
+    this.copy('main.swift', context.applicationName + '/Sources/main.swift')
   }
 })

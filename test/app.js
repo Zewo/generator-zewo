@@ -13,7 +13,7 @@ describe('generator-zewo:app', function () {
     assert.file([
       'zewo-server/Dockerfile',
       'zewo-server/Package.swift',
-      'zewo-server/Source/main.swift'
+      'zewo-server/Sources/main.swift'
     ])
   })
 })
