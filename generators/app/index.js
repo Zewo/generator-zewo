@@ -28,6 +28,11 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: function () {
+    this.template(
+      this.templatePath('Dockerfile'),
+      this.destinationPath(this.applicationName + '/Dockerfile'),
+      this.props
+    )
     this.fs.copy(
       this.templatePath('Package.swift'),
       this.destinationPath(this.applicationName + '/Package.swift')
