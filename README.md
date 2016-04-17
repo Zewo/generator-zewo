@@ -1,7 +1,7 @@
 # generator-zewo
 > 
 
-[![Swift 2.2][swift-image]][swift-url]
+[![Swift 3.0][swift-image]][swift-url]
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![License MIT][mit-image]][mit-url]
