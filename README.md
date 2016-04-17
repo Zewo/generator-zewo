@@ -38,7 +38,7 @@ License
 **generator-zewo** is released under the MIT license. See LICENSE for details.
 
 
-[swift-image]: https://img.shields.io/badge/Swift-2.2-orange.svg?style=flat
+[swift-image]: https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat
 [swift-url]: https://swift.org
 [npm-image]: https://badge.fury.io/js/generator-zewo.svg
 [npm-url]: https://npmjs.org/package/generator-zewo
