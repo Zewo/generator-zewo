@@ -11,8 +11,9 @@ describe('generator-zewo:app', function () {
 
   it('creates files', function () {
     assert.file([
+      'zewo-server/Dockerfile',
       'zewo-server/Package.swift',
-      'zewo-server/Source/main.swift'
+      'zewo-server/Sources/main.swift'
     ])
   })
 })

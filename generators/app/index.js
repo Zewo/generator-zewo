@@ -20,7 +20,6 @@ module.exports = yeoman.generators.Base.extend({
 
     this.prompt(prompts, function (props) {
       this.props = props
-      this.applicationName = props.applicationName
       // To access props later use this.props.applicationName;
 
       done()
@@ -28,16 +27,10 @@ module.exports = yeoman.generators.Base.extend({
   },
 
   writing: function () {
-    this.fs.copy(
-      this.templatePath('Package.swift'),
-      this.destinationPath(this.applicationName + '/Package.swift')
-    )
-    this.fs.copy(
-      this.templatePath('main.swift'),
-      this.destinationPath(this.applicationName + '/Source/main.swift')
-    )
-  },
+    var context = this.props
 
-  install: function () {
+    this.template('Dockerfile', context.applicationName + '/Dockerfile', context)
+    this.copy('Package.swift', context.applicationName + '/Package.swift')
+    this.copy('main.swift', context.applicationName + '/Sources/main.swift')
   }
 })
